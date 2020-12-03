@@ -24,6 +24,12 @@ const BsNavLink = (props) => {
   );
 };
 
+const BsNavBrand = () => (
+  <Link href="/">
+    <a className="navbar-brand port-navbar-brand">Countertops</a>
+  </Link>
+);
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -34,9 +40,7 @@ const Header = () => {
       light
       expand="md"
     >
-        <Link href="/">
-          <a className="port-navbar-brand">Countertops</a>
-        </Link>
+      <BsNavBrand />
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="mr-auto" navbar>
