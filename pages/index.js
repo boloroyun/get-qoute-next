@@ -1,14 +1,11 @@
-import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
-import BasePage from "../components/BasePage";
 import { Container, Row, Col } from "reactstrap";
 import Typed from "react-typed";
 
 
 
 const ROLES = ['Developer', 'Tech Lover', 'Team Player', 'Coursor Creator', 'React.js', 'Angular']
-class Index extends React.Component {
-  render() {
+const Index = () => {
     return (
       <BaseLayout className="cover">
           <div className="main-section">
@@ -68,7 +65,6 @@ class Index extends React.Component {
           </div>
       </BaseLayout>
     );
-  }
 } 
 
 export default Index;

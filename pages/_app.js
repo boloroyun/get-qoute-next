@@ -3,22 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/main.scss';
 
 
-class App extends React.Component {
+const App = ({Component, pageProps}) => 
 
-static async getInitialProps({Component, ctx}) {
-let pageProps = {};
-
-if (Component.getInitialProps) {
-  pageProps = await Component.getInitialProps(ctx);
-}
-
-    return { pageProps };
-  }
-
-  render() {
-    const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />
-  }
-}
+     <Component {...pageProps} />
+  
 
 export default App

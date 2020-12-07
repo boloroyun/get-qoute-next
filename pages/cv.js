@@ -1,10 +1,8 @@
-import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
 import BasePage from "../components/BasePage";
 
 
-class CV extends React.Component {
-  render() {
+const CV = () => {
     const { appProps } = this.props
     return (
       <BaseLayout>
@@ -14,6 +12,5 @@ class CV extends React.Component {
       </BaseLayout>
     ); 
   }
-}
 
 export default CV;
