@@ -6,7 +6,7 @@ const About =() => {
     return (
       <BaseLayout>
         <BasePage>
-          <h1>Hello About</h1>;
+          <h1>Hello About</h1>
         </BasePage>
       </BaseLayout>
     ); 
