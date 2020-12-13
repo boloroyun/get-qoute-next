@@ -5,16 +5,10 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from "reactstrap";
 import Link from "next/link";
 
-const BsNavLink = (props) => {
+const BsNavLink = props => {
   const { title, href } = props;
   return (
     <Link href={href}>
@@ -40,6 +34,7 @@ const LogoutLink = () => (
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  
   return (
     <div>
       <Navbar
