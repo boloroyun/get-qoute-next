@@ -1,19 +1,19 @@
 import React from "react";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import BasePage from "@/components/BasePage";
+import { useGetUser } from "@/actions/user";
 
+const Products =() => {
+    const { data, loading } = useGetUser();
 
-
-class Products extends React.Component {
-  render() {
     return (
-      <BaseLayout>
-      <BasePage>
-        <h1>Hello Products</h1>;
+      <BaseLayout user={data} loading={loading}>
+        <BasePage>
+          <h1>Hello Products</h1>
         </BasePage>
       </BaseLayout>
     );
   }
-}
+
 
 export default Products;
