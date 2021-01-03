@@ -3,6 +3,7 @@
 @import './components/header';
 //pages
 @import './index';
+@import './portfolios'; 
 
 
 html, body {
@@ -16,8 +17,15 @@ html, body {
 }
 
 .base-page{
-  padding-top: 150px;
-  color: white;
+  padding: 150px 0;
+  color: black;
+  background-color: whitesmoke;
+  min-height: 100vh;
+  .page-header-title {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
 
 

@@ -2,6 +2,8 @@
 
 const express = require('express');
 const next = require('next');
+var fs = require('fs');
+
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({dev});  
@@ -14,6 +16,9 @@ app.prepare().then(() => {
   server.all('*', (req, res) => {
     return handle(req, res);
   })
+
+
+
 
   const PORT = process.env.PORT || 3000;
   server.listen(PORT, (err) => {

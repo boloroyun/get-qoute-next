@@ -1,13 +1,15 @@
 import BaseLayout from "@/components/layouts/BaseLayout";
 import BasePage from "@/components/BasePage";
+import { useGetUser } from "@/actions/user";
 
 
 const CV = () => {
-    const { appProps } = this.props
+      const { data, loading } = useGetUser();
+
     return (
-      <BaseLayout>
-      <BasePage>
-        <h1>Hello CV</h1>
+      <BaseLayout user={data} loading={loading}>
+        <BasePage>
+          <h1>Hello CV</h1>
         </BasePage>
       </BaseLayout>
     ); 
