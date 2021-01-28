@@ -1,5 +1,5 @@
-import BaseLayout from "@/components/layouts/BaseLayout";
-import BasePage from "@/components/BasePage";
+import BaseLayout from "pages/products/[id]/node_modules/@/components/layouts/BaseLayout";
+import BasePage from "pages/products/[id]/node_modules/@/components/BasePage";
 import {authorizeUser, withAuth } from "../utils/auth0";
 
 const SecretSSR = ({user, title}) => {

@@ -29,6 +29,8 @@ const _deletePortfolio = async (e, portfolioId) => {
   return (
     <BaseLayout user={dataU} loading={loadingU}>
       <BasePage 
+      title="Newest Portfolios-Stones"
+        metaDescription="Watch the our kitchen and bathroom remodeling projects and portfolios from here.The beautiful modern homes are made by us. We serve Washington DC, Virginia and Baltimore "
       header='Portfolios' 
       className='portfolio-page'>
 

@@ -96,7 +96,7 @@ const PortfolioForm = ({ onSubmit, initialData = {} }) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="street">Job Title</label>
+        <label htmlFor="jobTitle">Job Title</label>
         <input
           ref={register}
           name="jobTitle"

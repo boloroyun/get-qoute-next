@@ -1,9 +1,14 @@
-@import './shared/fonts';
 //components
 @import './components/header';
+@import './components/view-source.module.css';
+
 //pages
 @import './index';
 @import './portfolios'; 
+@import './portfolio-detail'; 
+@import './blogs'; 
+@import './about'; 
+
 
 
 html, body {
@@ -38,4 +43,14 @@ html, body {
   color: white;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+.avatar-box{
+  img {
+    height: 50px;
+    border-radius: 50%;
+  }
+  .subtitle{
+    font-size: 14px;
+  }
 }
